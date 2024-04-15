@@ -1,201 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Air.Project</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styleresponsive.css">
 </head>
+
 <body>
-    <header>
-        <div class="navbar" >
-            <div class="nav-logo border" >
-                <div class="divlogo"></div>
-                <div class="nav-adress ">
-                    <p class="add-first">Deliver to</p>
-                    <div class="add-icon">
-                        <i class="fa-solid fa-location-dot"></i>  
-                        <p class="add-sec">India</p>
-                    </div>
-                </div>
+
+    <div class="navbar ">
+        <div class="nav1 ">
+            <nav class="nav-bar  ">
+                <div class="logo"><img src="logo.png" alt="logo"></div>
+                <ul class="nav-list ">
+                    <li><a href="Search"><i class='bx bx-search' style='color:rgba(0,0,0,0.73)'></i>Search</a></a>
+                    </li>
+                    <li><a href="#Support"><i class='bx bx-support'></i>Support</a></li>
+                    <li><a href="#Sign in"><i class='bx bx-user' style='color:rgba(0,0,0,0.62)'></i>Sign in</a></li>
+
+
+                </ul>
+        </div>
+
+        <div class="nav2">
+            <ul class="nav-list2  " id="nav-list2">
+                <li><a href="#Where We Fly">Where We Fly</a>
+                    <div class="mega-box">
+                        <div class="content">
+                        <div class="row">
+                            <header>BOOK</header>
+                            <ul class="mega-link">
+                        <li><a href="#">Search Flights</a></li>       
+                        <li><a href="#">Corporate Travel Programme</a></li>       
+                        <li><a href="#">Group Booking</a></li>       
+                        <li><a href="#">Special-Offers</a></li>       
+                        <li><a href="#">Travel Insurence</a></li>       
+                        <li><a href="#">Cargo</a></li>       
+                        <li><a href="#">Flight-schedule</a></li>       
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <header>Manage</header>
+                            <ul class="mega-link">
+                        <li><a href="#">Check In Online</a></li>       
+                        <li><a href="#">Manage Booking</a></li>       
+                        <li><a href="#">Seat Selection & Upgrades</a></li>       
+                        <li><a href="#">Self Service Re-accommodation</a></li>       
+                        <li><a href="#">Request & Refund</a></li>       
+                        <li><a href="#">Flight Status</a></li>       
+                        <li><a href="#">Fog Care</a></li>       
+                            </ul>
+                        </div>
+                        </div>
+                    </div>  
+                </li>
+                <li><a href="#Prepare to Travel">Prepare to Travel</a></li>
+                <li><a href="#Air India Experience">Air India Experience</a></li>
+                <li><a href="#Loyalty">Loyalty</a></li>
+
+            </ul>
+        </div>
+        <a href="#" class="nav-toggle" id="nav-toggle">
+            <i class='bx bx-menu bx-flip-vertical'></i>
+        </a>
+        </nav>
+    </div>
+    </div>
+
+    <div class="home">
+        <ul>
+            <li> <a href="#Home / Book"> Home / Book </a></li>
+        </ul>
+    </div>
+    <div class="Book">Book</div>
+    <div class="writting">Whether you end up chasing sunsets on a beach, embracing the tranquillity of the mountains, or
+        travelling for that all-important meeting, this is where it all begins! Choose your destination, pick your dates
+        – and let us be your travel companion.</div>
+    <div class="hero">
+        <div class="box"><a href="#book-flight"><img src="book-flights.webp" alt="book-flights"
+                    style="width: 118%;"></a>
+            <a href="book-flight">
+                <p>book-flights</p>
+            </a>
+        </div>
+
+        <div class="box"><a href="special-offer"><img src="special-offers.webp" alt="special-offers"
+                    style="width: 118%;"></a>
+            <a href="special-offer">
+                <p>special-offers</p>
+        </div></a>
+
+        <div class="hero-2">
+            <div class="box"><a href="flight-schedule"><img src="flight-schedule.webp" alt="flight-schedule"
+                        style="width: 118%;padding-top: 20px;"></a>
+                <a href="flight-schedule">
+                    <p>Flight-schedule</p>
+                </a>
+
             </div>
-            <div class="nav-search d-none">
-                <select class="search-select">
-                <option>All</option>
-                </select>
-                <input placeholder="Search Amazon" class="Search-input">
-                <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>  
-            
-            <div class="language">
-            EN 
+            <div class="box"><a href="corporate-booking"><img src="corporate-booking.webp" alt="corporate-booking"
+                        style="width: 118%;padding-top: 20px;"></a>
+                <a href="corporate-booking">
+                    <p>corporate-booking</p>
+                </a>
             </div>
-        <div class="nav-singin border">
-            <p><span>Hello, sign in</span></p>
-            <p class="nav-sec">Account & List</p>
         </div>
-        <div class="nav-return border">
-            <p><span>Returns</span></p>
-            <p class="nav-sec">& Orders</p>
-        </div>  
-        <div class="nav-cart border">
-            <i class="fa-solid fa-cart-shopping"></i>  
-            Cart
-        </div>
-    </div>
-    <div class="panel">
-        <div class="panel-all">
-            <i class="fa-solid fa-bars"></i>  
-            All
-        </div>
-        <div class="panel-option">
-              <p>Amazon miniTV</p>
-               <p> Sell</p>
-               <p> Best Sellers</p>
-               <p> Mobiles</p>
-               <p> Today's Deals</p>
-               <p> Electronics</p>
-               <p> Customer Service</p>
-               <p> Prime</p>
-               <p> New Releases</p>
-        </div>
-        <div class="panel-deals">
-         New Launch from Mobiles,Electronics & more | Shop now 
+        <div class="hero-3">
+            <div class="box">
+                <a href="group-booking"><img src="group-booking.webp" alt="group-booking"
+                        style="width: 118%;padding-top: 20px;"></a>
+                <a href="group-booking">
+                    <p>group-booking</p>
+                </a>
+                <a href="cargo"><img src="cargo.webp" alt="cargo" style="width: 118%;padding-top: 20px;"></a>
+                <a href="cargo">
+                    <p>cargo</p>
+                </a>
+
+            </div>
+            <div class="box"><a href="fly-assured"><img src="fly-assured.webp" alt="cargo"
+                        style="width: 118%;padding-top: 20px;"></a>
+                <a href="fly-assured.">
+                    <p>fly-assured</p>
+                </a>
+            </div>
         </div>
     </div>
-    </header>
-    <div class="hero-sec"></div>
-    <div class="shop-sec">
-        <div class="box1 box">
-    <div class="content">
-        <h2> Clothes </h2>
-        <div class="box-img" style="background-image: url(box1_image.jpg);"></div>
-        <p>See more</p></div>
+    <footer class="main">
+        <div class="main-footer">
+            <ul class="ul-1">
+                <a href="#">
+                    <li>ABOUT US</li>
+                </a>
+                <a href="#">
+                    <li>About Air India </li>
+                </a>
+                <a href="#">
+                    <li> Corporate Information</li>
+                </a>
+                <a href="#">
+                    <li>Press</li>
+                </a>
+                <a href="#">
+                    <li>Careers</li>
+                </a>
+                <a href="#">
+                    <li>Cargo</li>
+                </a>
+            </ul>
+            <ul class="ul-1">
+                <a href="#">
+                    <li>BOOK & MANAGE</li>
+
+
+
+                </a>
+                <a href="#">
+                    <li>Search Flights</li>
+                </a>
+                <a href="#">
+                    <li> Manage Booking</li>
+                </a>
+                <a href="#">
+                    <li> Flight Schedule</li>
+                </a>
+
+            </ul>
+            <ul class="ul-1">
+                <a href="#">
+                    <li>Where We Fly</li>
+
+
+
+                </a>
+                <a href="#">
+                    <li>Route Map</li>
+                </a>
+                <a href="#">
+                    <li>Non Stop Flight</li>
+                </a>
+                <a href="#">
+                    <li>Popular Flight</li>
+                </a>
+                <a href="#">
+                    <li>Partner Airline</li>
+                </a>
+
+            </ul>
+            <ul class="ul-1">
+                <a href="#">
+                    <li>Where We Fly</li>
+                </a>
+                <a href="#">
+                    <li> PREPARE TO TRAVEL</li>
+                </a>
+                <a href="#">
+                    <li>Baggage Guidelines</li>
+                </a>
+                <a href="#">
+                    <li>Airport Information</li>
+                </a>
+                <a href="#">
+                    <li>First-time Travellers, Children and Pets</li>
+                </a>
+
+                <a href="#">
+                    <li> Visas, Documents and Travel Tips</li>
+                </a>
+
+                <a href="#">
+                    <li>Health and Medical Assistance</li>
+                </a>
+
+            </ul>
+
         </div>
-        <div class="box2 box "> <div class="content">
-            <h2>Health & personal care </h2>
-            <div class="box-img" style="background-image: url(box2_image.jpg);"></div>
-            <p>See more</p></div></div>
-        <div class="box3 box "> <div class="content">
-            <h2>Revamp your home in style </h2>
-            <div class="box-img" style="background-image: url(box3_image.jpg);"></div>
-            <p>See more</p></div></div>
-        <div class="box4 box "> <div class="content">
-            <h2> Mobile phone & Electronics </h2>
-            <div class="box-img" style="background-image: url(box4_image.jpg);"></div>
-            <p>See more</p></div></div>
+        <div class="main2-footer">
+            <ul class="ul-1">
+                <a href="#">
+                    <li>AIR INDIA EXPERIENCE</li>
+                </a>
+                <a href="#">
+                    <li> At The Airport</li>
+                </a>
+                <a href="#">
+                    <li>In The Air </li>
+                </a>
+                <a href="#">
+                    <li> Our Fleet</li>
+                </a>
+            </ul>
+            <ul class="ul-1">
+                <a href="#">
+                    <li> At The Airport</li>
+                </a>
+                <a href="#">
+                    <li> In The Air </li>
+                </a>
+                <a href="#">
+                    <li>Our Fleet </li>
+                </a>
+                <a href="#">
+                    <li>About Flying Returns </li>
+                </a>
+                <a href="#">
+                    <li>Points Calculator </li>
+                </a>
+                <a href="#">
+                    <li>Earn Points </li>
+                </a>
+                <a href="#">
+                    <li>Spend Points </li>
+                </a>
+                <a href="#">
+                    <li> Flying Returns FAQ </li>
+                </a>
+            </ul>
+            <ul class="ul-1">
+                <a href="#">
+                    <li> SUPPORT </li>
+                </a>
+                <a href="#">
+                    <li> Contact </li>
+                </a>
+                <a href="#">
+                    <li>Frequently Asked Questions </li>
+                </a>
+                <a href="#">
+                    <li>About Flying Returns </li>
+                </a>
+                <a href="#">
+                    <li> Grievance Resolution</li>
+                </a>
 
-            <div class="box5 box">
-                <div class="content">
-                    <h2>Beauty & skin care </h2>
-                    <div class="box-img" style="background-image: url(box5_image.jpg);"></div>
-                    <p>See more</p></div>
-                    </div>
-                    <div class="box6 box "> <div class="content">
-                        <h2>Pets corner </h2>
-                        <div class="box-img" style="background-image: url(box6_image.jpg);"></div>
-                        <p>See more</p></div></div>
-                    <div class="box7 box "> <div class="content">
-                        <h2>Toys & Games </h2>
-                        <div class="box-img" style="background-image: url(box7_image.jpg);"></div>
-                        <p>See more</p></div></div>
-                    <div class="box8 box "> <div class="content">
-                        <h2>Fashion & Cloths </h2>
-                        <div class="box-img" style="background-image: url(box8_image.jpg);"></div>
-                        <p>See more</p></div></div>
-                   
 
+            </ul>
+            <ul class="ul-1">
+                <h3>AIR INDIA APP</h3>
+                <p> Download the app to book and manage your flights on the
+                <p><a href="learn more">learn more
+                    </a>
+                <div class="Logo">
+                    <a href="#"><img src="Appstore.svg" alt="Appstore"></a>
+                    <a href="#"><img src="google-play.svg" alt="google-play"></a>
+                </div>
+            </ul>
+        </div>
+        <div class="main3-footer">
+            <ul class="ul-1">
+                <a href="#">
+                    <li>Sitemap</li>
+                </a>
+                <a href="#">
+                    <li>Terms & Conditions </li>
+                </a>
+                <a href="#">
+                    <li>Privacy Policy </li>
+                </a>
+                <a href="#">
+                    <li>Accessibility Plan and Feedback Process </li>
+                </a>
+            </ul>
+            <ul class="ul-1">
+                <a href="#">
+                    <li>Cookie Policy</li>
+                </a>
+                <a href="#">
+                    <li>Cookie Settings </li>
+                </a>
+                <a href="#">
+                    <li>Conditions of Carriage </li>
+                </a>
+                <a href="#">
+                    <li>Domestic Fares </li>
+                </a>
+            </ul>
+            <ul class="ul-1">
+                <a href="#">
+                    <li>Travel Agents</li>
+                </a>
+                <a href="#">
+                    <li>GST </li>
+                </a>
+                <a href="#">
+                    <li>Passenger Rights </li>
+                </a>
 
-        
-        
-       
+            </ul>
+            <ul class="ul-1">
+                <h3>Follow-Us on</h3>
+                <div class="social-media">
+                    <a href="#"><img src="LinkedIn.svg" alt=""></a>
+                    <a href="#"><img src="twitter-new.svg" alt=""></a>
+                    <a href="#"><img src="Youtube.svg" alt=""></a>
+                    <a href="#"><img src="facebook.svg" alt=""></a>
+                    <a href="#"><img src="instagram.svg" alt=""></a>
+                </div>
+            </ul>
 
+        </div>
+    </footer>
+    <footer class="sub-footer">
+        <div class="tata">
+            <a href="#"><img class="tata" src="Tata_logo.svg" alt="TaTa"></a>
+            <a href="#"><img id="air-logo" src="air_india.svg" alt="air_india"></a>
+            <a href="#"><img src="SA.svg" alt="SA"></a>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
+    </footer>
+    <div class="copyright">
+        <a> &copy; 2024 Air India Ltd . </a>
     </div>
-
-<footer>
-    <div class="foot-panel-1">
-        Back to Top
+    <div class="copyright-1">
+        <a href="#">
+            <p>All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of
+                Carriage, Terms and Conditions.</p>
+        </a>
     </div>
-
-    <div class="foot-panel-2">
-        <ul>
-            <p>Get to Know Us</p>
-            <a>About Us</a>
-            <a>Careers</a>
-            <a>Press Releases</a>
-            <a>Amazon Science</a>
-        </ul>
-        <ul>
-            <p>Connect with Us</p>
-            <a>Facebook</a>
-            <a> Twitter</a>
-            <a> Instagram</a>
-            
-        </ul>
-        
-        <ul>
-            <p>Make Money with Us</p>
-               <a> Make Money with Us</a>
-               <a> Sell on Amazon</a>
-               <a> Sell under Amazon Accelerator</a>
-               <a> Protect and Build Your Brand</a>
-               <a> Amazon Global Selling</a>
-               <a> Become an Affiliate</a>
-               <a> Fulfilment by Amazon</a>
-               <a> Advertise Your Products</a>
-               <a> Amazon Pay on Merchants</a>
-        </ul>
-        <ul>
-            <p>Let Us Help You</p>
-            <a>COVID-19 and Amazon</a>
-            <a>Your Account</a>
-            <a>Returns Centre</a>
-            <a>100% Purchase Protection</a>
-            <a>Amazon App Download</a>
-            <a>Help</a>
-        </ul>   
-    </div>
-
-<div class="foot-panel3">
-    <div class="logo"></div>
-</div>
-
-
-
-<div class="foot-panel4">
-    <div class="pages">
-        <a >Conditions of Use & Sale</a>
-        <a>privacy Notice</a>
-        <a >interest-Based Ads</a>
-        <div class="copyright">
-        <a> &copy; 1996-2024, Amazon.com, Inc. or its affiliates</a></div>
-    </div>
-</div>
-
-
-
-
-
-
-</footer>
-
-
-
-
-    
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navlist2 = document.getElementById('nav-list2');
+        toggleButton.addEventListener('click', () => {
+            navlist2.classList.toggle('active');
+        })
+    </script>
 </body>
+
 </html>

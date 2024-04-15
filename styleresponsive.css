@@ -1,0 +1,237 @@
+@media screen and (max-width:991px) {
+    .nav-toggle {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .nav-list {
+        display: none;
+
+    }
+
+    .navbar {
+        height: 50pc;
+
+        background: rgba(128, 128, 128, 0.047);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .nav2 {
+        height: 100px;
+        width: 100px;
+    }
+
+    .nav-list {
+        position: absolute;
+
+    }
+
+    .nav2 ul li {
+        background-color: white;
+        /* border: 1px solid black; */
+        width: 49pc;
+        gap: 0px;
+
+    }
+
+    .nav-list2 {
+        flex-direction: column;
+        background-color: white;
+        padding-top: 20px;
+
+        height: 100%;
+        width: 40pc;
+        right: 0px;
+        left: -100%;
+    }
+
+    .nav-list2.active {
+        left: 0;
+        overflow: hidden;
+    }
+
+    .Book {
+        height: 100%;
+        width: 100%;
+        padding: 50px;
+        margin: 50px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+    .writting {
+        padding: 50px;
+
+        padding-top: 0%;
+        padding-bottom: 0%;
+
+    }
+
+    .hero::after {
+        height: 100%;
+        width: 200%;
+    }
+
+    .box {
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        scroll-behavior: smooth;
+
+    }
+
+    .ul-1 {
+        padding-left: 8pc;
+        list-style: none;
+        width: 15pc;
+        overflow: hidden;
+    }
+
+    #air-logo {
+        padding-left: 20pc;
+
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navbar {
+        height: 50pc;
+
+        background: rgba(128, 128, 128, 0.047);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .nav2 ul li {
+        background-color: white;
+        /* border: 1px solid black; */
+        width: 49pc;
+        gap: 0px;
+        column-gap: 0px;
+
+    }
+
+    .nav-list2 {
+        flex-direction: column;
+        background-color: white;
+        padding-top: 20px;
+
+        height: 100%;
+        width: 30pc;
+        right: 0px;
+
+
+    }
+}
+
+@media screen and (max-width:425px) {
+    .logo {
+        padding-left: 100px;
+        background-color: white;
+    }
+
+
+
+
+    .navbar {
+        height: 50pc;
+
+        background-color: white;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .nav2 ul li {
+        background-color: white;
+
+        width: 49pc;
+        gap: 0px;
+        column-gap: 0px;
+
+    }
+
+    .nav-list2 {
+        /* left: -7%; */
+        flex-direction: column;
+        background-color: white;
+        padding-top: 20px;
+
+        height: 100%;
+        width: 5pc;
+        right: 0px;
+    }
+    .Book{
+        height: 100%;
+        width: 100%;
+        padding-left: 0px;
+    }
+    .writting{
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+
+
+
+
+
+
+
+    .main2-footer {
+        text-align: center;
+        background-color: white;
+        padding: 0px;
+        margin: -7px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .main3-footer {
+        text-align: center;
+        align-items: center;
+    }
+
+    .social-media {
+        align-items: center;
+        justify-items: center;
+    }
+
+    .tata {
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0%;
+        padding-right: 105px;
+
+    }
+
+    #air-logo {
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        padding-right: 50px;
+        padding: 88px;
+        margin: auto;
+    }
+
+    .copyright {
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+
+    }
+
+    .copyright-1 {
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+
+    }
+
+}
